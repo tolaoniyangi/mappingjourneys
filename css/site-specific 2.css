@@ -1,0 +1,251 @@
+body{
+    font-family: 'Poppins', sans-serif !important; 
+}
+
+
+/*styling for side column*/
+.sidePanel .container .col-md-2 {
+    height: 100%;
+    padding: 2% 2% 2% 2%; /*top, right, bottom, left*/ 
+    margin: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 4, 0.8);
+    position:fixed;
+    left: 0;
+    color: rgba(179,179,179,1); /*font color*/
+    font-family: 'Dosis', sans-serif; 
+}
+
+.col-md-3 h1{
+    padding-top: 14%;
+    padding-bottom: 3%;
+}
+
+/*search bar styling*/
+.filters_search_input{
+    color: rgba(26, 26, 26, 1); /* color of the typing */
+    background-color: rgb(115,115,115);
+    border: 0;
+    width: 85%;
+    height: 100%;
+    margin-top: 2em;
+    padding: 1% 2% 1% 2%;
+}
+/*search icon in the search box*/
+button.searchBar{
+    /*font-size:.8em; changes size of icon*/
+    background: transparent;
+    border: none;
+    margin-top: 2em;
+}
+
+/*this is the styling for the general filter thing - multiple terms joined by*/
+.filters_search .search-type-selector {
+    font-weight: 100;
+    margin-bottom: 1%;
+    color: rgba(236,239,241,.5);
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-top: 5%;
+    padding-bottom: 0;
+}
+
+/* styling for the AND/OR dropdown */
+.filters_search .search-type-selector select {
+    height: 2rem;
+    margin-left: .5rem;
+    margin-top: 2rem;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 0;
+    font-weight: 300;
+}
+
+/*for checkboxes and stuff*/
+.selections{
+    list-style: none;
+    padding-left: 0;
+    display: list-item;
+}
+
+/* making the toggle and styling it*/
+.toggle{
+    position: relative;
+    width: 38px;
+    height: 22px;
+    border-radius: 100px;
+    border: 1px solid #78909c;
+    margin: 0;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* hiding the checkbox*/
+.toggle .check {
+    opacity: 0;
+}
+
+/**/
+.toggle .switch {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    bottom: 2px;
+    right: 18px;
+    background-color: #eceff1;
+    border-radius: 36px;
+    z-index: 1;
+    -webkit-transition: .25s cubic-bezier(.785,.135,.15,.86);
+    transition: .25s cubic-bezier(.785,.135,.15,.86);
+    -webkit-transition-property: left,right;
+    transition-property: left,right;
+    transition-delay: 0s,.05s;
+    -webkit-transition-delay: 0s,.05s;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.toggle .switch .b {
+    display: block;
+}
+.toggle .track {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.source-toggle .toggle .track {
+    bottom: 0;
+    -webkit-transition: .25s cubic-bezier(.785,.135,.15,.86);
+    transition: .25s cubic-bezier(.785,.135,.15,.86);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.025);
+    border-radius: 40px;
+}
+.toggle .b {
+    display: block;
+}
+/*styling for the text for User/Host*/
+.source {
+    text-transform: uppercase;
+    padding-top: 2px;
+    font-weight: 100;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*--------------------------------------------------------*/
+/*styling for the body of the page on the right */
+.bodyPanel .container .col-md-10 {
+    height: 100%;
+    padding: 0 0% 0% 0%; /*top, right, bottom, left*/ 
+    position:fixed;
+    right: 0;
+    display:block;
+    overflow: auto;
+}
+
+
+/*different blocks for the page on the right*/
+.page {
+    /*display:-webkit-flex;
+    display:flex;*/
+    flex-flow:row nowrap;
+    justify-content:left;
+    align-items:center; /* functions as vertical-align */
+    overflow:auto;
+    text-align:left;
+}
+
+
+  #canvasHolder.canvas{
+          /*width:1024px;
+          height:175px;*/
+        
+        }
+
+/* Fonts */
+.page h1 {
+    font-weight: bold;
+    font-size: 5em;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+#title.page {
+    background-color: rgba(358,96,90,.1);  
+    padding: 5%;
+}
+
+#title.page h1 {
+    font-size: 5em;
+    color: rgba(253,92,99,1); 
+    /*text-transform: uppercase; */
+}
+
+#title.page h2 {
+    font-size: 2.5em;
+    color: rgba(254, 129, 135,1); 
+}
+
+p{
+    font-weight: 600;
+}
+
+#big_picture.page {
+    background-color: rgba(253,160,45,0.7);
+    display: block;
+    padding: 5%;
+}
+
+#data.page {
+    background-color: rgba(153,204,102,0.7);
+    display: block;
+    padding: 5%;
+}
+
+#process.page {
+    background-color: rgba(98,173,242,0.7);
+    display: block;
+    padding: 5%;
+}
+
+#coding.page {
+    background-color: rgba(242,94,162,0.7);
+    display: block;
+    padding: 5%;
+}
+
+#interface.page {
+    background-color: #f2f2f2;
+    display: block;
+    padding: 5%;
+}
+
+/*-----------------------*/
+.cartogram{
+    height: auto;
+    width: 100%; /* this is the width of the column specified in html*/
+}
+
+.col-md-12{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: auto;
+}
+
+.wcContainer{
+  width: 40%;
+  float: left;
+  margin: 5px;
+  padding: 10px;
+
+}
+
+.wordcloud {
+display: block;
+margin: auto;
+width: 90%;
+
+}
+
+.imgtext{
+    text-align: center;
+}
